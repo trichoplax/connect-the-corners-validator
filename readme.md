@@ -1,6 +1,6 @@
 # Connect the corners validator
 
-A validator for outputs from the [Connect the corners without 4 in a row](https://codegolf.codidact.com/posts/287153) code golf challenge.
+A validator for outputs from the [Connect the corners without 4 in a row](https://codegolf.codidact.com/posts/287321) code golf challenge.
 
 ## :link: Webpage
 
