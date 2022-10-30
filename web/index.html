@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+        <title>Connect the corners validator</title>
+    </head>
+    <body>
+        <script type="module">
+            import init, { validate_connect_the_corners } from './connect_the_corners_validator.js';
+            const run = async () => {
+                await init();
+                document.getElementById("alert_button").onclick = () => {
+                    let msg = document.getElementById("message_input").value;
+                    document.getElementById("outcome_text").innerHTML = validate_connect_the_corners(msg);
+                }
+            }
+            run();
+        </script>
+        <h1>Connect the corners validator</h1>
+        <textarea autofocus id="message_input" rows="20" cols="40"></textarea>
+        <br>
+        <button type="button" id="alert_button">Validate input</button>
+        <h2>Outcome</h2>
+        <p id="outcome_text">Press 'Validate input' button for outcome.</p>
+        <hr>
+        <a href="https://github.com/trichoplax/connect-the-corners-validator" target="_blank" title="View the source code on GitHub">Source code (opens in new tab)</a>
+    </body>
+</html>
+
